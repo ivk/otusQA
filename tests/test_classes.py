@@ -32,7 +32,6 @@ def run_stop_tests():
     (Circle, (1,), math.pi)
 ])
 def test_figure_area_positive(figure, sides, expected_area):
-    # print(f"{figure.__name__} checking...")
     f = figure(*sides)
 
     if isinstance(expected_area, float):
