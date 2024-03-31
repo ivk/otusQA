@@ -24,7 +24,7 @@ class Rectangle(Figure):
         """
         :return: true if the rectangle given is a real one, raise error in other case
         """
-        for v in (self.side_b, self.side_b):
+        for v in (self.side_a, self.side_b):
             if not isinstance(v, (int, float)):
                 raise ValueError('rectangle sides must be numbers')
             if v <= 0:
